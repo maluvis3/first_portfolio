@@ -1,0 +1,179 @@
+@media screen and (max-width:1400px){
+
+    .profile {width: 50%;}
+    .profile img{width: 70%; margin: 6% auto;}
+    .about {width: 50%; padding: 6%;}
+    .contact {width: 50%; padding: 6%;}
+    .skills {width: 100%;}
+    .row{}
+
+
+
+    .portfolio {width: 100%;}
+    .portfolio h1{margin-bottom: 60px;}
+
+
+    .owl-carousel{padding:0px 105px 25px;}
+
+    .svg.radial-progress{max-width: 161px;}
+
+    #intro_section .intro_R{padding: 10% 6%}
+    .intro_R .P_Txt{font-size:19px;}
+    #intro_section .intro_L{padding: 13% 6%}
+    .intro_L .LP_2{font-size:19px;}
+
+    .portCnts, .portCnts_last{_background:url(../images/portfoliopageBackground.jpg) no-repeat center bottom; _background-size:cover;}
+
+    .portCntsText{width: 100%; text-align:center; padding:0;}
+    .portCntsText p{padding:1% 9% 2%;}
+    .portCntsText li {padding: 0px 0 3px;}
+
+    .portCntsImg{width: 100%;}
+    .portCntsImg img{width: 80%; margin:auto;}
+
+    #contact_section .contact_R{padding: 5% 4%;}
+    .contact_R .CRP_1{font-size: 29px;}
+    .contact_R .CRP_2{font-size: 23px;}
+    .contact_R .CRP_3{font-size: 28px;}
+    .contact_R .CRP_3 span{font-size: 39px;}
+    .contact_R .CRP_4{font-size: 29px;}
+
+    #contact_section .contact_L{padding: 7% 4%; text-align:left;}
+    .contact_L .CLP_1{font-size: 32px; font-weight: 600;}
+    .contact_L .CLP_2{font-size:20px; font-weight: 400; margin: 30px 0 0;}
+    .contact_L .CLP_3{font-size:20px; font-weight: 400; margin: 0;}
+ 
+
+}
+
+@media screen and (max-width:900px){
+    .center{width:90%;}
+    h1{font-size:25px;}
+    .media_wrap{width: 85%; margin: auto;}
+
+    header .gnb{display:block; position:fixed; width:60%; float:none; height:100%; background:rgba(0, 0, 0, 0.8); right:-100%;}
+    header .gnb li{float:none; position:relative; top:100px; text-align:right;}
+    header .gnb li a{padding:10px 12%;}
+
+    header.on .gnb li a{color:#fff;}
+
+    .menuBtn{display:block;}
+
+
+
+    .profile {width: 50%;}
+    .profile img{width: 80%;}
+
+    .about {width: 50%; padding:6% 3%;}
+    .contact{width:50%; padding:6% 3%;}
+
+    .skills{padding: 3%;}
+    .svg.radial-progress{max-width: 150px;}
+
+    .portfolio{padding: 3%;}
+    #intro_section{margin: 80px 0 0;}
+    #intro_section .intro_R{padding: 4% 6%; width:100%; border-bottom: 1px solid #414141; border-right:none;}
+    .intro_R .RP_1{font-size: 20px; font-weight: 500;}
+    .intro_R .RP_2{font-size: 18px;}
+    .intro_R .RP_3{font-size: 21px; font-weight: 500;}
+    .intro_R .RP_3 span{font-size: 34px; font-weight: 500;}
+    
+    .intro_R .P_Txt{font-size:18px; font-weight: 400; margin: 29px 0 0;}
+    .intro_R .P_Txt p{margin: 0 0 15px;}
+
+    #intro_section .intro_L{padding: 6% 6%; width:100%}
+    .intro_L .LP_1{font-size:30px;}
+    .intro_L .LP_2{font-size:18px; margin: 24px 0 0;}
+
+    
+    .portCnts{margin:0 0 20%;}
+
+    .portCntsText h4{font-size:25px;}
+    .portCntsText h4>span.no{font-size:42px;}
+    .btn{padding: 0.9em 1.8em;}
+
+    .contact_R .CRP_1{font-size: 30px; font-weight: 500;}
+    .contact_R .CRP_2{font-size: 20px;}
+    .contact_R .CRP_3{font-size: 22px; font-weight: 600;}
+    .contact_R .CRP_3 span{font-size: 30px; font-weight: 600;}
+    .contact_R .CRP_4{font-size: 30px; font-weight: 500;}
+
+  
+    .contact_L .CLP_1{font-size: 32px; font-weight: 600;}
+    .contact_L .CLP_2{font-size:20px; font-weight: 400; margin: 30px 0 0;}
+    .contact_L .CLP_3{font-size:20px; font-weight: 400; margin: 0;}
+
+    .footer_txt{font-size:13px;}
+}
+
+@media screen and (max-width:600px){
+    .profile img {width: 100%;}
+    h1{font-size: 19px;}
+
+    .about{padding: 6% 3% 0;}
+    .about p{font-size: 14px; padding: 20px 0 0;}
+    .contact p{font-size: 14px; padding: 20px 0 0;}
+
+    svg.radial-progress{width: 130px;}
+
+    .intro_R .P_Txt{font-size: 16px;}
+}
+
+
+@media screen and (max-width:450px){
+
+    .btn{font-size:0.9rem; padding:0.8em 1.2em;}
+
+    .profile{width: 100%;}
+    .profile img{width: 50%;}
+
+    .about{width:100%; text-align:center; padding: 8% 3%;}
+    .contact{width:100%; text-align:center; padding: 8% 3%;}
+    .skills{width:100%; text-align:center; padding: 8% 3%;}
+
+
+    svg.radial-progress{width:98px; padding: 6px;}
+
+    .portfolio{display:none;}
+    /* .portfolio{width:100%; text-align:center; padding: 8% 3%;}
+    .portfolio .main-content .item img{width: 100%;} */
+
+    
+    .pageTitle{height:20vh;}
+    .pageTitle h3 {font-size: 25px;}
+    .pageTitle span {font-size: 35px;}
+
+    .portCntsText h4{font-size:22px;}
+    .portCntsText h4>span.no{font-size:40px;}
+    .portCntsText ul.txtList{padding: 10px 10px 15px; font-size:18px;}
+    .portCntsText li.last {font-size: 16px;}
+    .portCntsText p {padding: 1% 9% 2%; font-size: 15px;}
+
+    #intro_section .intro_R{padding:7% 6%; width:100%; border-bottom: 1px solid #414141; border-right:none;}
+    .intro_R .RP_1{font-size: 16px;}
+    .intro_R .RP_2{font-size: 17px;}
+    .intro_R .RP_3{font-size: 16px;}
+    .intro_R .RP_3 span{font-size: 20px;}
+    
+    .intro_R .P_Txt{font-size:14px; margin:29px 0 27px;}
+    .intro_R .P_Txt p{margin: 0 0 15px;}
+
+    #intro_section .intro_L{padding: 7% 6%;}
+    .intro_L .LP_1{font-size:20px;}
+    .intro_L .LP_2{font-size:14px; margin: 24px 0 0;}
+
+    #contact_section .contact_R{width:100%; padding: 10% 5%; border:none; text-align:center;}
+    .contact_R .CRP_1{font-size:20px;}
+    .contact_R .CRP_2{font-size:19px}
+    .contact_R .CRP_3{font-size:20px;}
+    .contact_R .CRP_3 span{font-size: 22px;}
+    .contact_R .CRP_4{font-size:20px}
+
+    #contact_section .contact_L{width:100%; text-align:center; padding: 7% 4% 17%;}
+    .contact_L .CLP_1{font-size:20px;}
+    .contact_L .CLP_2{font-size:17px; margin: 17px 0 0;}
+    .contact_L .CLP_3{font-size:17px;}
+   
+    .footer_txt{font-size:10px; padding:3% 6%;}
+}
+

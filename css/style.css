@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+/* font-family: 'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+/* font-family: 'Merriweather', serif;
+font-family: 'Roboto Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* reset css */
+*{margin:0; padding:0;}
+a{text-decoration:none;}
+img{display:block;}
+ol, ul{list-style:none;}
+
+/* reset layout css */
+.center{width:100%; height:auto; max-width:1280px; margin:auto;}
+.center_wrap{width:100%; height:auto; max-width:1400px; margin:auto;}
+.clear:after{display:block; content:''; clear:both;}
+
+/* general css */
+.wrap{width:100%; height:auto; overflow:hidden; background: #000;}
+#main_section{width:100%; height:auto;  _background: linear-gradient(to top right, #060628, #1F245A, #682359); background: #000; top: 80px; position: relative;}
+#portfolio_section{width:100%; height:auto; background:#fff;}
+#intro_section{width:100%; height:auto; background: #f1f1f1;}
+h1{font-family: 'Merriweather', serif; font-style: italic; font-weight: 600; font-size:35px;}
+
+/* scroll button css */
+.scrollToTop {width: 65px; height: 65px; padding: 10px; position: fixed; bottom: 75px; right: 40px; display: none; z-index: 999;}
+.scrollToTop img {width: 100%; height: 100%;}
+
+/* common button section */
+.btn {box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: transparent; border: 2px solid #e74c3c; border-radius: 0.6em; color: #e74c3c; cursor: pointer; font-size: 1rem; font-weight: 400; line-height: 1; margin: 10px; padding: 1.2em 2.8em; text-decoration: none; text-align: center; text-transform: uppercase;}
+.btn a{color: #000;}
+.btn:hover, .btn:focus {color: #fff; outline: 0;}
+.buttonSec{display:flex; justify-content:center;}
+.buttonSec button {border-color: #f1c40f; color: #333; background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%); background-position: 100%; background-size: 400%; -webkit-transition: background 300ms ease-in-out; transition: background 300ms ease-in-out;}
+.buttonSec button:hover {background-position: 0;}
+
+/* header css */
+header{width:100%; height:auto; background:rgba(0,0,0,0.6); position:fixed; z-index:9999;}
+header .logo{float:left; width:180px; padding:15px 0;}
+header .logo img{width:100%;}
+header .gnb{float:right; position:relative;}
+header .gnb li{float:left;}
+header .gnb li a{color:#fff; text-transform:uppercase; display:block; font-family: 'Noto Sans KR', sans-serif; font-weight:400; font-size: 20px; padding:20px 20px;}
+header .gnb li a:hover{color:#f1c40f;}
+
+.menuBtn{width:20px; height:20px; float:right; margin-top:30px; position:relative; background:transparent; display:none; transition:all 0.3s;}
+.menuBtn>div{transition:all 0.3s;}
+.menuBtn>div:nth-child(1){width:100%; height:2px; background:#fff; position:absolute; top:50%; transform:translateY(-50%);}
+.menuBtn>div:nth-child(2){width:2px; height:100%; background:#fff; position:absolute; left:50%; transform:translateX(-50%);}
+
+.menuBtn.on div{background:#fff;}
+
+.menuBtn.on{transform:rotate(135deg);}
+
+/* general footer css */
+.footer{width:100%; background:gray; height:10vh;}
+
+/* Main page section css */
+.main{float:left;}
+.profile{width:40%; background:#000; overflow:hidden;}
+.profile img{width:100%;}
+
+.about{width:30%; box-sizing: border-box; padding:16px;}
+.about p{color: #f4f4f4; font-family: 'Noto Sans KR', sans-serif; font-size: 17px; font-weight: 300; box-sizing: border-box; padding: 38px 0 0;}
+
+.contact{width:30%; box-sizing: border-box; padding:16px;color: #fff;}
+.contact p{color: #f4f4f4; font-family: 'Noto Sans KR', sans-serif; font-size: 17px; font-weight: 300; box-sizing: border-box; padding: 38px 0 0;}
+.contact p i{box-sizing: border-box; padding:0 13px 0 0;}
+
+
+.skills{width:60%; height:auto; box-sizing: border-box; padding:16px; color: #fff;}
+*, :before, :after { box-sizing: border-box; }
+        
+.row {margin-left: auto; margin-right: auto; max-width: 58em; padding: 1em; text-align: center;}
+svg.radial-progress {height: auto; width: 150px; padding: 1em; transform: rotate(-90deg);}
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; /* Circumference */
+  stroke-width: 2;
+}
+
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
+
+svg.radial-progress text {
+  fill: #fff;
+  font: 'Oswald', sans-serif;
+  font-size: 8px;
+  text-anchor: middle;
+}
+
+/*** COLORS ***/
+/* Primary */
+svg.radial-progress:nth-of-type(6n+1) circle { stroke: #a2ed56; }
+/* Secondary */
+svg.radial-progress:nth-of-type(6n+2) circle { stroke: #83e4e2; }
+/* Tertiary */
+svg.radial-progress:nth-of-type(6n+3) circle { stroke: #fd6470; }
+/* Quaternary */
+svg.radial-progress:nth-of-type(6n+4) circle { stroke: #fca858; }
+/* Quinary */
+svg.radial-progress:nth-of-type(6n+5) circle { stroke: #fddc32; }
+
+.portfolio{width:60%; height:auto; box-sizing: border-box; padding:16px; color: #fff;}
+.portfolio h1{margin-bottom:10px;}
+.portfolio .main-content{width:100%; height:auto;}
+.owl-carousel{box-sizing: border-box; padding: 0 105px 0;}
+.portfolio .main-content .item{width:100%; height:auto; display: inline-block; position: relative; overflow: hidden;}
+.portfolio .main-content .item img{width:90%; margin:auto;}
+
+.main-content {position: relative;}
+.main-content .owl-theme .custom-nav {position: absolute; top: 20%; left: 0; right: 0;}
+.main-content .owl-theme .custom-nav .owl-prev,
+.main-content .owl-theme .custom-nav .owl-next {position: absolute; width: 50px; height: 70px; color: inherit; background: rgba(2, 98, 247, 0.3); border: none; z-index: 100;}
+.main-content .owl-theme .custom-nav .owl-prev i,
+.main-content .owl-theme .custom-nav .owl-next i {font-size: 2.5rem; color: #fff;}
+.main-content .owl-theme .custom-nav .owl-prev {left: 0;}
+.main-content .owl-theme .custom-nav .owl-next {right: 0;}
+
+/* introduce page css */
+#intro_section{font-family:'Noto Sans KR', sans-serif; background:linear-gradient(to top right, #060628, #1F245A, #682359);}
+#intro_section .intro_R{width:50%; float: left; box-sizing: border-box; padding: 10% 11%; border-right: 1px solid #fff;}
+.intro_R .RP_1{color:#fff; font-size: 27px; font-weight: 500;}
+.intro_R .RP_2{color:#b1aeae; font-size: 25px;}
+.intro_R .RP_3{color:#fff; font-size: 30px; font-weight: 500;}
+.intro_R .RP_3 span{color:#EDBF25; font-size: 58px; font-weight: 500;}
+
+
+/* 네온 효과 */
+.flux {font-family: neon; color: #426DFB; line-height: 3vw; text-shadow: 0 0 3vw #2356FF;}
+.intro_R .P_Txt{font-size:21px; font-weight: 300; margin: 50px 0 0; color: #fff;}
+.intro_R .P_Txt p{margin: 0 0 37px;}
+
+#intro_section .intro_L{width:50%; float: left; box-sizing: border-box; padding: 13% 11%;}
+.intro_L .LP_1{color:#EDBF25; font-size:36px; font-weight: 500;}
+.neon {font-family: neon; color: #FB4264; font-size: 9vw; text-shadow: 0 0 3vw #F40A35;}
+.intro_L .LP_2{font-size:21px; font-weight: 400; margin: 50px 0 0; color: #fff;}
+
+/* profile page css */
+.pageTitle{width:100%;  align-items: center; display: flex; justify-content: center; flex-direction: column; font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box; padding: 60px;}
+.pageTitle h3{font-size: 31px; font-weight: 300; color: #ccc; font-family: 'Noto Sans KR', sans-serif;}
+.pageTitle span{font-size: 43px; font-weight: 500; color: #333; font-family: 'Noto Sans KR', sans-serif; border-bottom:2px solid #333; padding-bottom:2px;}
+
+.portCnts, .portCnts_last{width:100%; height:auto; margin:13% 0 0; font-family: 'Noto Sans KR'; box-sizing: border-box; padding: 0 0 5%;}
+.right{float:right;}
+
+.portCntsText{width:50%; height:auto; box-sizing: border-box; padding:0 30px;}
+.portCntsText h4>span.no{font-size:50px; color: #F1C40F; font-weight:600; padding: 0 40px 0 0;}
+.portCntsText h4{font-size:30px; color:#333; font-weight: 400; font-family: 'Noto Sans KR', sans-serif;}
+.portCntsText ul.txtList{font-size:20px; color: gray; font-weight: 300; box-sizing: border-box; padding:30px 10px 15px;}
+.portCntsText .txtList span.txt{padding-left:50px;}
+.portCntsText li{padding:0 0 8px;}
+.portCntsText li.last{padding:20px 0 3px; font-weight: 500; font-size: 17px;}
+.portCntsText li.last a{color: #1F245A;}
+.portCntsText li.last a:hover{color: #EDBF25;}
+.portCntsText p{font-size:17px; color:#333; font-weight: 300; box-sizing: border-box; padding: 0 0 7% 0;}
+
+.portCntsText .port_detail{text-align: center; box-sizing: border-box; padding: 20px;}
+.portCntsText .port_detail span{border-bottom: 2px solid #F1C40F; box-sizing: border-box; padding: 3px 23px; font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
+.portCntsText .port_detail span a{cursor: pointer; color:black;}
+
+.portCntsImg{width: 50%; height:auto; _background: rosybrown;}
+.portCntsImg img{width:100%;}
+
+
+
+/* contact page css */
+#contact_section{font-family: 'Noto Sans KR', sans-serif; background:linear-gradient(to top right, #060628, #1F245A, #682359); box-sizing: border-box; padding: 7% 0;}
+#contact_section .contact_R{width:50%; float: left; box-sizing: border-box; padding: 13% 11%; border-right: 1px solid #414141; text-align:right;}
+.contact_R .CRP_1{color:#ffffff; font-size: 35px; font-weight: 500;}
+.contact_R .CRP_2{color:#b1aeae; font-size: 33px;}
+.contact_R .CRP_3{color:#ffffff; font-size: 38px; font-weight: 600;}
+.contact_R .CRP_3 span{color:#F1C40F; font-size: 49px; font-weight: 600;}
+.contact_R .CRP_4{color:#ffffff; font-size: 38px; font-weight: 500;}
+
+#contact_section .contact_L{width:50%; float: left; box-sizing: border-box; padding: 13% 11%;}
+.contact_L .CLP_1{color:#F1C40F; font-size: 37px; font-weight: 600;}
+.contact_L .CLP_2{color:#ffffff; font-size:25px; font-weight: 400; margin: 50px 0 0;}
+.contact_L .CLP_3{color:#ffffff; font-size:25px; font-weight: 400; margin: 0;}
+
+
+/* footer page css */
+footer{width:100%; height:auto; background: #000;}
+.footer_txt{text-align: center; box-sizing: border-box; padding:3% 15%; color:#b1aeae; font-size:12px;}
+
+
